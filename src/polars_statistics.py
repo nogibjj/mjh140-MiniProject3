@@ -34,12 +34,12 @@ def get_descriptive_statistics(iris_df: ps.DataFrame):
 def plot_iris_data(iris_data: ps.DataFrame):
     '''Plots the Iris dataset.'''
 
-    plt.scatter(iris_data["SepalLengthCm"], iris_data["PetalLengthCm"])
-    plt.title("Sepal Length vs. Sepal Width (All Species)")
+    plt.scatter(x = iris_data["SepalLengthCm"], y = iris_data["PetalLengthCm"])
+    plt.title("Sepal Length vs. Petal Length (All Species)")
     plt.xlabel("Sepal Length")
-    plt.ylabel("Sepal Width")
+    plt.ylabel("Petal Length")
+    plt.savefig("SepalLengthVsPetalLength.png")
     plt.show(block=True)
-    plt.savefig("SepLengthVsSepWidth.png")
 
 if __name__ == "__main__":
     iris = import_iris("iris_data.csv")
