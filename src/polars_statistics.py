@@ -2,7 +2,6 @@
 
 import os
 import polars as ps
-import pandas as pd
 import matplotlib.pyplot as plt
 
 def import_iris(file_name: str):
@@ -24,27 +23,27 @@ def import_iris(file_name: str):
     except FileNotFoundError as exc:
         raise FileNotFoundError(f"The file ({file_name}) was not found.") from exc
     
-def get_descriptive_statistics(df: ps.DataFrame):
+def get_descriptive_statistics(iris_df: ps.DataFrame):
     '''Returns descriptive statistics for the Iris dataset.'''
 
-    if not isinstance(df, ps.DataFrame):
+    if not isinstance(iris_df, ps.DataFrame):
         raise TypeError("df must be a polars.DataFrame")
 
-    return df.describe()
+    return iris_df.describe()
 
-def plot_iris_data(df: ps.DataFrame):
+def plot_iris_data(iris_data: ps.DataFrame):
     '''Plots the Iris dataset.'''
 
-    plt.scatter(df["SepalLengthCm"], df["PetalLengthCm"])
+    plt.scatter(iris_data["SepalLengthCm"], iris_data["PetalLengthCm"])
     plt.title("Sepal Length vs. Sepal Width (All Species)")
     plt.xlabel("Sepal Length")
     plt.ylabel("Sepal Width")
     plt.show(block=True)
 
 if __name__ == "__main__":
-    df = import_iris("iris_data.csv")
-    print(get_descriptive_statistics(df))
-    plot_iris_data(df)
+    iris = import_iris("iris_data.csv")
+    print(get_descriptive_statistics(iris))
+    plot_iris_data(iris)
 
 
 
