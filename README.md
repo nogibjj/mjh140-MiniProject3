@@ -1,9 +1,9 @@
-# Descriptive Statistics with Pandas and Matplotlib   [![GitHub Actions](https://github.com/nogibjj/mjh140---MiniProject2/workflows/CI/badge.svg)](https://github.com/nogibjj/mjh140---MiniProject2/actions)
+# Descriptive Statistics with Pandas and Matplotlib   [![GitHub Actions](https://github.com/nogibjj/mjh140-MiniProject3/workflows/CI/badge.svg)](https://github.com/nogibjj/mjh140-MiniProject3/actions)
 
 
 ## Summary:
 
-This project introduces the Pandas package for generating descriptive statistics on the Iris Species dataset. Matplotlib and Seaborn packages were used to create a boxplot visualization of Sepal Length by Species. For more info on the Iris Species dataset, visit the following link:
+This project introduces the Polars package for generating descriptive statistics on the Iris Species dataset. Matplotlib package was used to create a scatterplot visualization of Sepal Length vs Petal Length for all Species. For more info on the Iris Species dataset, visit the following link:
 
 https://www.kaggle.com/datasets/uciml/iris?resource=download
 
@@ -19,15 +19,15 @@ https://www.kaggle.com/datasets/uciml/iris?resource=download
 │   └── actions.yml
 ├── .gitignore
 ├── Makefile
-├── PetalLength_by_Species.png
 ├── README.md
 ├── requirements.txt
+├── SepalLengthVsPetalLength.png
 ├── src
 │   ├── __init__.py
-│   └── descriptive_statistic
+│   └── polars_statistics.py
 └── tests
     ├── __init__.py
-    └── test_descriptivestats.py
+    └── test_polars.py
 
 ```
 
@@ -49,4 +49,4 @@ The following table of descriptive statistics was outputed from the `describe_ir
 
 The following boxplot visualization for Sepal Length distribution by Species was created from the `visualize_iris` function within `src/descriptive_statistic.py`:
 
-<p align = "center"><img src = "https://github.com/nogibjj/mjh140---MiniProject2/blob/main/SepalLength_by_Species.png" width = 500px></p>
+<p align = "center"><img src = "https://github.com/nogibjj/mjh140-MiniProject3/blob/main/SepalLength_by_Species.png" width = 500px></p>
