@@ -2,6 +2,7 @@
 
 import os
 import polars as ps
+import pandas as pd
 import matplotlib.pyplot as plt
 
 def import_iris(file_name: str):
@@ -34,15 +35,11 @@ def get_descriptive_statistics(df: ps.DataFrame):
 def plot_iris_data(df: ps.DataFrame):
     '''Plots the Iris dataset.'''
 
-    if not isinstance(df, ps.DataFrame):
-        raise TypeError("df must be a polars.DataFrame")
-    
-    fig, axs = plt.subplots(nrows=1, ncols=1, figsize=(9, 4))
-    axs[0].boxplot(df.to_numpy(), labels=df.columns)
-    
-    #plt.savefig("SepalLength_Scatterplot_by_Species.png")
-
-    plt.show()
+    plt.scatter(df["SepalLengthCm"], df["PetalLengthCm"])
+    plt.title("Sepal Length vs. Sepal Width (All Species)")
+    plt.xlabel("Sepal Length")
+    plt.ylabel("Sepal Width")
+    plt.show(block=True)
 
 if __name__ == "__main__":
     df = import_iris("iris_data.csv")
