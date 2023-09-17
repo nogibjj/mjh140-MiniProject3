@@ -49,4 +49,4 @@ The following table of descriptive statistics was outputed from the `describe_ir
 
 The following boxplot visualization for Sepal Length distribution by Species was created from the `visualize_iris` function within `src/descriptive_statistic.py`:
 
-<p align = "center"><img src = "https://github.com/nogibjj/mjh140-MiniProject3/blob/main/SepalLength_by_Species.png" width = 500px></p>
+<p align = "center"><img src = "[https://github.com/nogibjj/mjh140-MiniProject3/blob/main/SepalLength_by_Species.png](https://github.com/nogibjj/mjh140-MiniProject3/blob/main/SepalLengthVsPetalLength.png)" width = 500px></p>
