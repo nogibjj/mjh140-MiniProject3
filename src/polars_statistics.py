@@ -39,6 +39,7 @@ def plot_iris_data(iris_data: ps.DataFrame):
     plt.xlabel("Sepal Length")
     plt.ylabel("Sepal Width")
     plt.show(block=True)
+    plt.savefig("SepLengthVsSepWidth.png")
 
 if __name__ == "__main__":
     iris = import_iris("iris_data.csv")
