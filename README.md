@@ -35,18 +35,23 @@ https://www.kaggle.com/datasets/uciml/iris?resource=download
 
 The following table of descriptive statistics was outputed from the `describe_iris` function within `src/descriptive_statistic.py`:
 
-|          | PetalLengthCm | PetalWidthCm | SepalWidthCm | SepalLengthCm |
-| -------- | ------------- | ------------ | ------------ | ------------- |
-|count     |    150.00     |   150.00    |   150.00     |    150.00 |
-|mean      |      3.76     |     1.20    |     3.05     |      5.84 |
-|std       |      1.76     |     0.76    |     0.43     |      0.83 |
-|min       |      1.00     |     0.10    |     2.00     |      4.30 |
-|25%       |      1.60     |     0.30    |     2.80     |      5.10 |
-|median    |      4.06     |     1.25    |     3.03     |      5.82 |
-|75%       |      5.10     |     1.80    |     3.30     |      6.40 |
-|max       |      6.90     |     2.50    |     4.40     |      7.90 |
+┌────────────┬───────────────┬───────────────┬────────────────┬──────────────┬──────────────┐
+│ describe   ┆ PetalLengthCm ┆ SepalLengthCm ┆ Species        ┆ PetalWidthCm ┆ SepalWidthCm │
+│ ---        ┆ ---           ┆ ---           ┆ ---            ┆ ---          ┆ ---          │
+│ str        ┆ f64           ┆ f64           ┆ str            ┆ f64          ┆ f64          │
+╞════════════╪═══════════════╪═══════════════╪════════════════╪══════════════╪══════════════╡
+│ count      ┆ 150.0         ┆ 150.0         ┆ 150            ┆ 150.0        ┆ 150.0        │
+│ null_count ┆ 0.0           ┆ 0.0           ┆ 0              ┆ 0.0          ┆ 0.0          │
+│ mean       ┆ 3.758667      ┆ 5.843333      ┆ null           ┆ 1.198667     ┆ 3.054        │
+│ std        ┆ 1.76442       ┆ 0.828066      ┆ null           ┆ 0.763161     ┆ 0.433594     │
+│ min        ┆ 1.0           ┆ 4.3           ┆ Iris-setosa    ┆ 0.1          ┆ 2.0          │
+│ 25%        ┆ 1.6           ┆ 5.1           ┆ null           ┆ 0.3          ┆ 2.8          │
+│ 50%        ┆ 4.4           ┆ 5.8           ┆ null           ┆ 1.3          ┆ 3.0          │
+│ 75%        ┆ 5.1           ┆ 6.4           ┆ null           ┆ 1.8          ┆ 3.3          │
+│ max        ┆ 6.9           ┆ 7.9           ┆ Iris-virginica ┆ 2.5          ┆ 4.4          │
+└────────────┴───────────────┴───────────────┴────────────────┴──────────────┴──────────────┘
 
 
 The following boxplot visualization for Sepal Length distribution by Species was created from the `visualize_iris` function within `src/descriptive_statistic.py`:
 
-<p align = "center"><img src = "[https://github.com/nogibjj/mjh140-MiniProject3/blob/main/SepalLength_by_Species.png](https://github.com/nogibjj/mjh140-MiniProject3/blob/main/SepalLengthVsPetalLength.png)" width = 500px></p>
+<p align = "center"><img src = "https://github.com/nogibjj/mjh140-MiniProject3/blob/main/SepalLengthVsPetalLength.png" width = 500px></p>
